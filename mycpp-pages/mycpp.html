@@ -31,18 +31,17 @@
   <hr>
   <pre><code>
   #include &lt;iostream&gt;
-  #include &lt;<random>&gt;
+  #include &lt;random&gt;
 
   using namespace std;
   mt19937 mt_rand(time(0));
-
   double myrand(){
-	  return (1.0*mt_rand()/mt_rand.max());
+    return (1.0*mt_rand()/mt_rand.max());
   }
   int main(){
     for(int i=1;i<=20;i++){
-		  for(int j=1;j<=5;j++){
-          printf("%f ",myrand());
+      for(int j=1;j<=5;j++){
+        printf("%f ",myrand());
       }
       printf("\n");
     }
